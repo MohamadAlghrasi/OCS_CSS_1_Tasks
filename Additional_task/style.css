@@ -1,0 +1,120 @@
+/*
+-to get more explain can hover at any selector in css then vs code will explain it
+
+======================
+== part 1: video 78 ==
+======================
+
+-1 *: select all elements
+
+-2 body: select body elements
+
+-3 element: select elements from this type
+
+-4 element1 element2: select elements2 that exist in elements1(direct&indirect) 
+
+-explain direct & indirect child
+
+<div>-parent(levelzero)-
+
+<div>-directchild(levelone)-   <div>-indirectchild(level2)-</div>         </div>
+
+<div>-directchild(levelone)- <div>-indchildl2-  <div>-indchildl3-</div> </div></div>
+
+<div>-directchild(levelone)-</div>
+
+</div>
+
+-5 .class_name: select elements have this class name
+
+-6 #id: select elements have this id name
+
+-7 .parent .child: select elements have class name(child) exist IN elements have class name(parent) (direct&indirect)
+
+-8 .class1.class2: select elements have class name(class1 class2) together
+
+-9 .class_name element: select elements exist in elements have this class name(direct&indirect)
+
+-10 .class_name element1, .class_name element2: same previous, but select two groups(want to apply instructios on both)
+
+-11 element.class_name: select elements from this type that have this class name -ex: p.style2 => select only any <p class="style2"></p> -
+
+-12 .class_name >.class_name: same(7) but (direct) only.....
+
+
+======================
+== part 2: video 79 ==
+======================
+
+* note: 7,12 selectors for elements in element
+        13,14 selectors for element after element
+
+-13 el1 + other el2: select el2 that exist directly(مباشرة) after el1(select one element only) 
+        EX: (div + p) select any p afterdiv directly, if there is p in div (<div> <p> </p> </div> ) p here not include
+
+-14 el1 ~ other el2: select all el2 -of same level- exist after el1 even there is other type elements between them(mixed) -ex: p~div every divs AFTER p of same level(parent not childs)- 
+
+-15 [attribute]: select all elements have this att -ex: [title]-
+
+-16 element[attribute]: select only elements of this type that have this att -ex: p[title]-
+
+-17 [attribute=value]: select all elements have this att with this value -ex: [title='m']-
+
+-18 element[attribute=value]: select only elements of this type that have this att with this value -ex: p[title='m']-
+
+-19 element[attribute~=value]: select all element have att contain a WORD(value)-should be Separated- ex: div[title~=" hi "] select any div has title contain 'hi' word and must be separated -if be div[title~=" hillo "] will not include
+
+-20 element[attribute*=value]: select all element have att contain a STRING(value) -can be any form- ex: div[title~=" hi "] select any div has title contain 'hi' srting could be part of word -if be div[title~=" hillo "] will include
+
+-21 element[attribute^=value]: select all element have att START with a STRING(value) like previous selector
+
+
+======================
+== part 3: video 80 ==
+======================
+
+
+-22 element:first-child : select this element type that be FIRST child of any element(parent) begin of body tag -ex: p:first-child- 
+
+-23 element:last-child : select this element type that be LAST child of any element(parent) begin of body tag -ex: p:last-child- 
+
+-24 element:first-of-type : select this element type that be FIRST this type child(igrone other types of childs) of any element(parent) 
+
+-25 element:last-of-type : select this element type that be LAST this type child(igrone other types of childs) of any element(parent) 
+
+-26 element:only-child : select this element type that be the only child(no any other childs) of any element(parent) 
+
+-27 element:only-of-type : select this element type that be the only child of this type(allow exsist other types)
+
+
+======================
+== part 4: video 81 ==
+======================
+
+
+* Note: 28,29 selectors scan each elements in a parent(direct childs without childs of childs) 
+        31,32 selectors scan each the selected type of element only in a parent(direct childs without childs of childs) 
+        for additional explain go to index.html
+
+-28 element:not(selector): opposite of this selector
+
+-29 element:nth-child(n/odd-even): select determined order number for child of this type of el, from all childs BIGIN FROM TOP
+        Good website: https://nthmaster.ru/
+-30 element:nth-last-child(): select determined order number for child of this type of el, from all childs BIGIN FROM BOTTOM
+
+-31 element:nth-of-type(n/odd-even): select determined order number for this of element only without any other types(igrone other types of elements), from all childs begin from top
+
+-32 element:nth-last-of-type(n/odd-even): select determined order number for this of element only without any other types(igrone other types of elements), from all childs begin from bottom
+
+
+======================
+== part 5: video 82 ==
+======================
+
+
+-33 el:checked : select all this type of el that checked -ex: input[type="checkbox"]:checked - 
+    -same at (:empty-:diabled-:required-:fucus-::selection-::placeholder-::after...........et)
+
+-34 root: select html tag(all element)
+
+*/
