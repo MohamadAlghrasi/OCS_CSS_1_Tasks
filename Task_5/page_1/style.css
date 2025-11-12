@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(255, 0, 195);
+}
+
+.groub-articles {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.groub-articles p {
+  height: 150px;
+  width: 200px;
+  background-color: aliceblue;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.scroll-article {
+  height: 100px;
+  overflow: scroll;
+  margin-left: 20px;
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+}
+
+.scroll-article p {
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.banner {
+  height: 40vh;
+  background-color: #8b441f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 50px;
+}
+
+.landing-page {
+  height: 60vh;
+  background-color: #d2a262;
+}
+
+.landing-page .header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page .header a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #326629;
+  font-size: 25px;
+}
+
+.landing-page .paragraph h2 {
+  margin-bottom: 20px;
+}
+
+.landing-page .paragraph p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.landing-page .paragraph p:nth-of-type(1),
+.landing-page .paragraph p:nth-of-type(2) {
+  color: #8b441f;
+}
